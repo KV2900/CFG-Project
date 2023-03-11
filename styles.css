@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* nav-bar */
+
+.nav-bar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color:darkred;
+    align-items: center;
+    text-align: center; 
+    position: fixed;
+    top: 0;
+    right: 0;
+    left:0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.nav-bar ul li {
+    display: inline-block;
+    padding:4px;
+    color: seashell;
+}
+
+.left-nav ul li{
+    float: left;
+}
+
+.right-nav ul li{
+    float: right;
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+.nav-bar ul li a:hover {
+    text-decoration: underline;
+}
+
+.nav-bar img{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding-top: 4px;
+}
+
+/* main-title */
+
+.main-title{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    padding-top: 70px;
+    font-size: 80px;
+
+        background:  linear-gradient(rgb(216, 227, 231) 30%, rgb(1, 29, 99) 55%, hsl(243, 96%, 10%) 61%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: wave 2000ms ease alternate infinite;
+        transition: all 0.4s ease;
+        }
+        @keyframes wave {
+        0% {
+        background-position: 0 0;
+        }
+        100% {
+        background-position: 50vw 10px;
+        }
+}
+
+/* body */
+
+body {
+    font-family: "Sofia", sans-serif;
+    background-color:gainsboro;
+    float: center;
+}
+
+/* homepage-body */
+
+.homepage-body{
+    background-image: url("assets/iceland.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* summary */
+
+.summary{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.summary ul li{
+    padding: 15px;
+}
+
+.summary ul li a{
+    text-decoration: none;
+    color:black;
+    font-size:large;
+    font-size: 45px;
+    text-decoration: bold;
+}
+
+.summary ul li a:hover{
+    text-decoration: underline;
+}
+
+
+/* sub-heading */
+
+.subheading{
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    text-align: left;
+    padding-top: 75px;
+    padding-left: 25px;
+    font-size: 30px;
+}
+
+/* paragraph-text */
+
+.paragraph-text{
+    color:black;
+    font-size:large;
+    font-size: 20px;
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.paragraph-text a{
+    text-decoration: none;
+    font-size:large;
+    font-size: 20px;
+}
+
+/* paragraph-container */
+
+.paragraph-container{
+    display: inline-block;
+}
+
+/* container */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* main-images */
+
+.drawings figure{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    margin: 0.5em;
+    padding: 0.5em;
+    float: center;
+}
+img.scaled {
+    max-width: 100%;
+    max-height:100%;
+}
+
+
+/* poem style */
+
+.poem{
+    text-align: left;
+    padding-top: 80px;
+}
+
+.poem p{
+    padding: 15px;
+    color:darkred;
+    font-size:large;
+    font-size: 30px;
+    text-decoration: bold;
+}
+
+/* scroll to top button */
+
+.button{
+    text-align: center;
+}
+
+#top-button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* footer */
+
+.footer{
+    background-color: darkred; 
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 4px;
+    color: seashell;
+}
+
+.footer ul li a{
+    display: inline-block;
+    padding: 4px;
+    color: seashell;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer ul li a:hover{
+    text-decoration: underline;
+}
+
+.footer-middle{
+    float: center;
+    padding-left: 50%;
+    }
+    
+.footer-right ul li{
+    float: right;
+    }
