@@ -82,6 +82,15 @@
         }
 }
 
+
+@media screen and (max-width: 575px) {
+    .main-title {
+        font-size: 50px;
+       
+    }
+}
+
+
 /* body */
 
 body {
@@ -96,7 +105,10 @@ body {
     background-image: url("assets/iceland.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    min-height: 100vh;
 }
+
 
 /* summary */
 
@@ -134,14 +146,23 @@ body {
     font-size: 30px;
 }
 
+
 /* container */
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: left;
-    justify-content: center;
+    justify-content: left;
     overflow: hidden;
+}
+
+
+@media screen and (max-width: 575px) {
+    .container {
+    display: block;
+    flex-direction: column;
+    }
 }
 
 /* paragraph-text */
@@ -191,6 +212,7 @@ img.scaled {
 .poem{
     text-align: left;
     padding-top: 80px;
+    padding-bottom: 25px;
 }
 
 .poem p{
@@ -223,6 +245,23 @@ img.scaled {
     padding-right: 15px;
     justify-content: space-between;
     display: flex;
+    position: absolute;
+    bottom: 0px;
+    width: 98%;
+}
+
+@media screen and (max-width: 575px) {
+    .footer {
+        background-color: darkred; 
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        position:relative;
+        justify-content: left;
+        background-color:darkred;
+        align-items: center;
+        text-align: center; 
+    }
 }
 
 .footer ul li{
@@ -244,10 +283,10 @@ img.scaled {
 }
 
 .footer-middle{
-    float: center;
     padding-left: 50%;
+    float: center;
     }
     
-.footer-right ul li{
+.footer-right{
     float: right;
-    }
+    }   
